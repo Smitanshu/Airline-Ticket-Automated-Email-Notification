@@ -1,0 +1,178 @@
+/* App.css */
+.ticket-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ticket-header {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .ticket-header h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .ticket-header p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .ticket-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .passenger-info, .flight-info, .ticket-class {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+  }
+  
+  .passenger-info h2, .flight-info h2, .ticket-class h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .passenger-info p, .flight-info p, .ticket-class p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .pricing {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+  }
+  
+  .pricing h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .pricing p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .rules-regulations {
+    margin-top: 30px;
+  }
+  
+  .rules-regulations h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .rules-regulations ul {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  .rules-regulations li {
+    margin-bottom: 8px;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+  }
+  
+  .contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .option{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .send-option{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+  .whatsapp-icon{
+    height: 20px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 30%;
+  }
+
+
+  .gmail-icon{
+    height: 20px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 30%;
+  }
+
+
+  .message-icon{
+    height: 20px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 30%;
+  }
+
+  .print-btn{
+    height: 20px;
+    width: 50px;
+    font-size: medium;
+    border: 2px solid black;
+    
+  }
+
+  @media print {
+    body * {
+      visibility: hidden; /* Hide everything */
+      
+    }
+  
+    .ticket-container, .ticket-container * {
+      visibility: visible; /* Make only ticket visible */
+    }
+  
+    .ticket-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Adjust based on your ticket layout */
+    }
+  
+    
+
+    .option{
+        display: none;
+    }
+  }
